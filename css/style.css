@@ -1,0 +1,798 @@
+
+body{
+    background-color: #fff !important;
+}
+/* Top Navbar */
+.top-navbar {
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Contact Info */
+.contact-info {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Logo */
+.navbar-brand img {
+    height: 180px !important; /* Increased logo size */
+    width: 130%;
+}
+
+/* Bottom Navbar */
+.bottom-navbar {
+    background-color: black;
+    padding: 15px 0;
+}
+
+.bottom-navbar .nav-link {
+    color: white !important;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.bottom-navbar .nav-link:hover {
+    color: #ffcc00 !important;
+    transform: scale(1.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .top-navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact-info {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    .navbar-brand img {
+        height: 100px; /* Adjusted for smaller screens */
+    }
+    .bottom-navbar .nav-link {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+}   
+
+
+
+
+
+
+/** SLider start**/
+.slider-container {
+    position: relative;
+    width: 101.7%;
+    height: 800px; /* Full screen height */
+    overflow: hidden;
+    margin: 0;
+    margin-left:-12px ;
+    
+
+}
+
+.slider {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    object-fit: cover;
+}
+
+.active {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Navigation Buttons */
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .slider-container {
+        height: 100vh;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    button {
+        font-size: 16px;
+        padding: 5px;
+    }
+}
+/** SLider end**/
+
+/** about start**/
+.about-area{
+    height: 300px;
+    width: 100%;
+    
+}
+.abt-heading{
+    font-family: "Petrona", Sans-serif !important;
+    text-align: center;
+    color: #000;
+    font-size: 30px;
+    font-style: italic !important;
+    font-weight: 600;
+    padding-top: 60px;
+}
+.abt-heading2{
+    font-family: "Petrona", Sans-serif !important;
+    text-align: center;
+    color: #000 ;
+    font-weight: 600;
+    padding-top: 40px;
+}
+.abt-text {
+    font-family: "Petrona", Sans-serif !important;
+    text-align: center;
+    color: #000;
+    padding-top: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .about-area {
+        height: 400px;
+        margin-bottom: 80px;
+    }
+   
+}
+
+@media (max-width: 768px) {
+    .abt-text {
+        
+        margin-bottom: 200px;
+    }
+
+    }
+
+
+/** about end**/
+
+/** products start **/
+#products{
+    height: 750px;
+    
+}
+.prod-heading{
+    font-family: "Petrona", Sans-serif !important;
+    text-align: center;
+    color: #000;
+   
+    font-style: italic !important;
+    font-weight: 600;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+.prod-heading2{
+    font-family: "Petrona", Sans-serif !important;
+    text-align: center;
+    color: #000;
+    font-style: italic !important;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+.prod-heading-area{
+    height: 100px;
+    width: 100%;
+}
+
+.img-box1{
+    width: 70%;
+    height: 500px;
+    border-radius: 20px;
+    background-color: #ff3c78;
+    margin-top: 0px;
+    margin-left: 130px;
+}
+.img-box1 img{
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
+    transition: 0.3s ease-in;
+   
+   }
+   .img-box1 img:hover{
+    transform: scale(1.1) ;
+   }
+.img-box2{
+    width: 70%;
+    height: 500px;
+    border-radius: 20px;
+    background-color: #ff3c78;
+    margin-top: 0px;
+    margin-left: 50px;
+  
+}
+.img-box2 img{
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
+    transition: 0.3s ease-in;
+   }
+   .img-box2 img:hover{
+    transform: scale(1.1) ;
+   }
+
+.prod-title{
+    margin-left: 140px;
+    margin-top: 20px;
+    color: #000 !important;
+    
+}
+.prod-title2{
+    margin-left: 60px;
+    margin-top: 20px;
+    color: #000;
+
+}
+.icon-set{
+    margin-top: 10px;
+    margin-left: 220px;
+}
+.icon-set2{
+    margin-top: 10px;
+    margin-left: 260px;
+}
+.prod-link{
+    text-decoration: none;
+    color: #003A66;
+}
+
+/* Responsive Adjustments */
+
+    @media (max-width: 767px) {
+        
+       .prod-heading2{
+            padding-top: 80px !important;
+            
+        }
+       
+    }
+   
+
+   
+
+
+
+
+/** products end **/
+
+
+/** contact start **/
+/* Centering the contact section */
+#contact {
+    padding: 80px 0;
+}
+
+/* Centering Contact Card & Form */
+.contact-card {
+    margin: auto; /* Center horizontally */
+    margin-top: 50px; /* Add top spacing */
+}
+
+/* Contact Card Styling */
+.contact-card {
+    background: #000;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    transition: 0.3s ease-in;
+    margin-left: 90px;
+    height: 350px;
+    
+}
+.contact-card:hover{
+    transform: scale(1.05);
+    border: 2px solid black;
+    box-shadow: 2px solid white !important;
+}
+
+/* Contact Form Box */
+.card-img-area{
+    width: 100%;
+    height: 150px;
+    background-color: #ffff;
+}
+.contact-main-heading{
+    text-align: center;
+    color: #000;
+}
+.contact-heading{
+    color: #fff;
+    padding-top: 10px;
+}
+.contact-num{
+    color: red;
+
+}
+.address{
+    color: #fff;
+}
+.contact-icon{
+    padding-right: 5px;
+}
+.card-img-area img{
+    width: 100%;
+    height: 150px;
+    border-radius: 0px !important;
+}
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .contact-card {
+        max-width: 90%;
+        text-align: center;
+    }
+   
+}
+
+@media (max-width: 768px) {
+    .contact-card {
+        margin-top: 30px;
+        width: 100%;
+        margin-left: 10px;
+    }
+    @media (max-width: 767px) {
+        .contact-card {
+            margin-top: 30px;
+            width: 100%;
+            margin-left: 10px;
+        }
+        #contact{
+            margin-top: 30px;
+        }
+
+        @media (max-width: 575px){
+            .contact-card {
+                margin-top: 30px;
+                width: 100%;
+                margin-left: 10px;
+            }
+            #contact{
+                margin-top: 550px;
+            }
+            .img-box2{
+                margin-left: 80px;
+            }
+            .prod-title2{
+                margin-left: 80px;
+            }
+            .img-box1{
+                margin-left: 80px;
+            }
+            .prod-title{
+                margin-left: 70px;
+            }
+           
+        }
+        @media (max-width: 492px) {
+            .about-area{
+                height: 350px;
+            }
+        }
+        @media (max-width: 433px) {
+            .about-area{
+                height: 400px;
+            }
+        }
+        @media (max-width: 404px) {
+            .about-area{
+                height: 450px;
+            }
+            .icon-set{
+                margin-top: -20px;
+                margin-left: 80px;
+                
+            }
+            .icon-set2{
+                margin-top: -10px;
+                margin-left: 80px;
+            }
+        }
+        @media (max-width: 375px) {
+            .about-area{
+                height: 500px;
+            }
+          
+        }
+        @media (max-width: 365px) {
+            .about-area{
+                height: 550px;
+            }
+          
+        }
+        @media (max-width: 347px) {
+            .about-area{
+                height: 600px;
+            }
+          
+        }
+        @media (max-width: 326px) {
+            .about-area{
+                height: 700px;
+            }
+            .icon-set{
+                margin-top: -40px;
+                margin-left: 120px;
+                
+            }
+            .icon-set2{
+                margin-top: -40px;
+                margin-left: 120px;
+            }
+          
+        }
+        @media (max-width: 297px) {
+            .about-area{
+                height: 800px;
+            }
+            .icon-set{
+                margin-top: -40px;
+                margin-left: 120px;
+                
+            }
+            .icon-set2{
+                margin-top: -40px;
+                margin-left: 120px;
+            }
+          
+        }
+    }
+   
+}
+
+/** contact end **/
+
+
+/** footer start **/
+/* Footer Styling */
+.footer {
+    background: #222; /* Dark background for a premium look */
+    color: #fff;
+    padding: 50px 0;
+    text-align: left;
+}
+
+.footer-heading h4 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.listing {
+    list-style: none;
+    padding: 0;
+}
+
+.listing li {
+    margin-bottom: 10px;
+}
+
+.listing a {
+    color: #ddd;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.listing a:hover {
+    color: #e91e63;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    background: #111;
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+    color: #ccc;
+}
+
+/* Icons in Footer */
+.footer-icon {
+    margin-right: 8px;
+    color: #e91e63;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .footer-heading {
+        text-align: center;
+    }
+
+    .listing {
+        text-align: center;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        text-align: center;
+    }
+
+    .footer-bottom p {
+        font-size: 14px;
+    }
+}
+
+/** footer end **/
+
+
+
+.cosmetic-hero {
+    width: 101.7%;
+    height: 200px;
+    background-color: white;
+    margin-left: -12px;
+    padding-top: 60px;
+    background-image: url(../images/cosm-hero.jpg);
+    
+}
+
+.cosm-heading {
+    color: #000 !important;
+    text-align: center;
+    padding-top: 20px;
+   
+}
+.cosm-heading1 {
+    color: #fff !important;
+    text-align: center;
+    padding-top: 20px;
+   
+}
+.cosmetic-section{
+    background-color: #fff;
+}
+/* Card Styling */
+.card {
+    background-color: #fff !important;
+    color: white !important;
+   border: none !important;
+    
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    width: 100%;
+    margin: 20px auto;
+}
+
+/* Image Box - Bigger from Bottom */
+.img-box {
+    width: 100%;
+    height: 250px;  /* Increased height */
+    background-color: black;
+    border: 2px solid #fff;
+  
+}
+.img-box img{
+    width: 100% !important;
+    height: 250px !important;
+}
+/* Card Body */
+.card-body {
+    padding: 20px;
+    height: 180px;
+    background-color: #fff;
+    padding-top: 30px !important;
+    color: #000 !important;
+    
+}
+
+/* Read More Button */
+.read-more-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left:-50px ;
+    padding-bottom: 20px !important;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 140px;
+    height: 40px;
+}
+
+.read-more-btn:hover {
+    background-color: darkred;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .cosmetic-section .col-lg-3 {
+        flex: 0 0 45%;
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .cosmetic-section .col-lg-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+
+
+/* Contact Form Box */
+.form-box {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 50px auto; /* Centers it with margin */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+/* Form Input Styling */
+.custom-form,
+.custom-form-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Button Styling */
+.send-btn {
+    background: #e91e63;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 38.6%; /* Keeps it at a reasonable size */
+    margin-top: 565px;
+    display: block;
+    text-align: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .form-box {
+        max-width: 90%;
+        padding: 30px;
+    }
+    .send-btn {
+        width: 80%; /* Full width on smaller screens */
+        font-size: 14px;
+        padding: 10px;
+        margin-top: 780px;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-box {
+        width: 100%;
+        padding: 20px;
+    }
+
+
+    .send-btn {
+        width: 80%; /* Full width on smaller screens */
+        font-size: 14px;
+        padding: 10px;
+        margin-top: 780px;
+    }
+}
+
+.prod-area{
+    height: 700px;
+    width: 100%;
+}
+.prod-img-box{
+    margin: 40px;
+    margin-top: 80px;
+    margin-left: 100px;
+    background-color: #000;
+    width: 80%;
+    height: 500px;
+}
+.prod-img-box img{
+    width: 100%;
+    height: 500px;
+}
+.prod-info-box{
+    padding-top: 90px;  
+    color: #000 ;
+}
+.prod-info-box h3{
+    padding-top: 20px;
+}
+.prod-btn{
+background-color: red !important;
+margin-top: 600px !important;
+color: #fff;
+width: 20%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .prod-btn {
+        margin-bottom: -100px !important;
+        
+    }
+    .prod-area{
+        margin-bottom: 200px;
+    }
+   
+}
+
+@media (max-width: 768px) {
+    .prod-btn {
+        margin-top: 1400px !important;
+        
+    }
+    .prod-area{
+        margin-bottom: 200px;
+    }
+
+   
+}
+.aboutus-area{
+    height: 700px;
+}
+.abtus-text{
+    font-size: 20px;    
+    padding: 60px;
+}
